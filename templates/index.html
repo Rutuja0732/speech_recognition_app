@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎤 Speech Recognition App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎤 Speech Recognition App</h1>
+        <p>Upload an audio file to transcribe it into text.</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="audio/*" required>
+            <button type="submit">Upload</button>
+        </form>
+        {% if transcription %}
+            <div class="transcription">
+                <h2>Transcription:</h2>
+                <p>{{ transcription }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

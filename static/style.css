@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0e5ff, #ffebcc); /* Light purple to light orange gradient */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid #ffcc00; /* Yellow border */
+}
+
+h1 {
+    color: #6a0dad; /* Purple */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ff5722; /* Orange */
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #00bfff; /* Sky blue */
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="file"]:hover {
+    border-color: #ffcc00; /* Change border color on hover */
+}
+
+button {
+    background-color: #00bfff; /* Sky blue */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff5722; /* Orange on hover */
+    transform: scale(1.05);
+}
+
+.transcription {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff3cd; /* Light yellow */
+    border: 1px solid #ffeeba; /* Light yellow border */
+    border-radius: 5px;
+    text-align: left;
+}
+
+h2 {
+    margin-top: 0;
+    color: #6a0dad; /* Purple */
+}
