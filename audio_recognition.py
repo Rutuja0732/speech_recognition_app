@@ -37,4 +37,4 @@ if __name__ == "__main__":
     result = recognize_speech_from_file(AUDIO_FILE)
     
     # Print the result
-    print(f"Speech Recognition  for your audio results are : {result}")
+    print(f"Speech recoginition results of your given audio  are as following : {result}")
